@@ -17,13 +17,13 @@ st.set_page_config(
    
     initial_sidebar_state="auto",
 )
-data=pd.read_excel(r"C:\Users\pvijayakumar\OneDrive - Aptean-online\PycharmProjects\Prospect ROI model files\sears_52802.xlsx")
+data=pd.read_excel(r"sears_52802.xlsx")
 df=data
 print(df.columns)
 st.title("PROSPECT RECOMMENDATIONS")
-df_zip=pd.read_excel(r"C:\Users\pvijayakumar\OneDrive - Aptean-online\PycharmProjects\Prospect ROI model files\ZIp_lat_long_Pooja.xlsb")
+df_zip=pd.read_excel(r"ZIp_lat_long_Pooja.xlsb")
 
-df_datRates=pd.read_excel(r"C:\Users\pvijayakumar\OneDrive - Aptean-online\PycharmProjects\Prospect ROI model files\TL_Rates_Sears.xlsx")
+df_datRates=pd.read_excel(r"TL_Rates_Sears.xlsx")
 new_column_names = {
     'EstimatedLineTotal': 'Average Market Rate',
     'HighLineTotal': 'Ceiling Rate'
