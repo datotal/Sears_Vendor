@@ -74,7 +74,7 @@ df = df.dropna(axis=0, subset=[shipper_country,consignee_country,shipper_zip,con
 df['MonthYear'] = df[shipdate].dt.strftime('%B %Y')  
 month_counts = df['MonthYear'].nunique()
 
-st.header("Time Frame "+str(month_counts)+" Months ")
+st.header("Time Frame 6 Months ")
 st.subheader("Shipment Count "+str(f'{data.shape[0]:,}'))
 
 #converting into upper case
